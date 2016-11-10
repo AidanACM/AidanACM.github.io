@@ -1,6 +1,5 @@
 var game = new Phaser.Game(320,568);
-game.state.add("Boot",Boot);
-game.state.start("Boot");
+
 
 
 
@@ -12,3 +11,6 @@ class Boot {
     this.scale.pageAlignVertically = true;
   }
 }
+
+game.state.add("Boot",Boot);
+game.state.start("Boot");
