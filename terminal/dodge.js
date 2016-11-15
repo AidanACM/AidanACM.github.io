@@ -10,7 +10,30 @@ class Boot {
     this.scale.pageAlignHorizontally = true;
     this.scale.pageAlignVertically = true;
   }
+
+  create() {
+    this.state.start("Load")
+  }
+
+
+class Load {
+  preload() {
+    console.log("Loading..");
+  }
+  creat() {
+    console.log("Loaded");
+  }
+
 }
 
+
+
 game.state.add("Boot",Boot);
+game.state.add("Load",Load);
 game.state.start("Boot");
+
+
+
+
+
+
