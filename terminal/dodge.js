@@ -20,7 +20,7 @@ class Load {
   preload() {
     console.log("Loading..");
   }
-  creat() {
+  create() {
     console.log("Loaded");
   }
 
