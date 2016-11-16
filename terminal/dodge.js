@@ -14,7 +14,7 @@ class Boot {
   create() {
     this.state.start("Load")
   }
-
+}
 
 class Load {
   preload() {
