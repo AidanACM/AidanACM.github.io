@@ -32,7 +32,7 @@ class Play {
   create() {
     console.log("Entered Play State");
     this.background = this.add.tileSprite(0,0,320,568,"bg");
-    this.background.autoScroll(999,99999);
+    this.background.autoScroll(1,1);
   }
 }
 
