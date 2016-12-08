@@ -23,14 +23,30 @@ class Load {
   }
   create() {
     console.log("Loaded");
+    this.state.start("Play")
   }
-
 }
+
+
+class Play {
+  create() {
+    console.log("Entered Play State");
+    this.background = this.add.tileSprite(0,0,320,568,"bg");
+    this.background.autoScroll(999,99999);
+  }
+}
+
+
+
+
+
+
 
 
 
 game.state.add("Boot",Boot);
 game.state.add("Load",Load);
+game.state.add("Play",Play);
 game.state.start("Boot");
 
 
