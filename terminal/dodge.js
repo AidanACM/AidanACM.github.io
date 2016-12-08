@@ -19,6 +19,7 @@ class Boot {
 class Load {
   preload() {
     console.log("Loading..");
+  this.load.image("bg","assets/mybluenesswithnospaces.jpg")
   }
   create() {
     console.log("Loaded");
@@ -33,7 +34,11 @@ game.state.add("Load",Load);
 game.state.start("Boot");
 
 
+/*
+          ()   _______ 
+         /!\  <  Lol |
+          !    | Hey |
+         / \   | Lol |
+               |_____|
 
-
-
-
+*/
