@@ -21,11 +21,7 @@ class Load {
     console.log("Loading..");
   this.load.image("bg","assets/mybluenesswithnospaces.jpg")
   this.load.audio("Music","assets/Runninginthe90swithnospaces.mp3")  
-  this.text = game.add.text(game.world.centerX, game.world.centerY "- Headache Warning!!!", {
-    font: "20px Arial",
-    fill: "ff0044",
-    align: "center"
-  });
+
  
   }
   create() {
@@ -40,6 +36,11 @@ class Play {
   create() {
     console.log("Entered Play State");
     this.background = this.add.tileSprite(0,0,320,568,"bg");
+    this.text = game.add.text(game.world.centerX, game.world.centerY "- Headache Warning!!!", {
+      font: "20px Arial",
+      fill: "ff0044",
+      align: "center"
+    });
     this.music = game.add.audio('Music')
     this.music.play()
     this.background.autoScroll(0,99999999999999999999);
