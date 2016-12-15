@@ -20,10 +20,12 @@ class Load {
   preload() {
     console.log("Loading..");
   this.load.image("bg","assets/mybluenesswithnospaces.jpg")
+  
   }
   create() {
     console.log("Loaded");
-    this.state.start("Play")
+    this.state.start("Play");
+
   }
 }
 
