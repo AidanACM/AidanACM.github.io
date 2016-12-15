@@ -36,7 +36,7 @@ class Play {
   create() {
     console.log("Entered Play State");
     this.background = this.add.tileSprite(0,0,320,568,"bg");
-    this.text = game.add.text(game.world.centerX, game.world.centerY "- Headache Warning!!!", {
+    this.text = game.add.text(game.world.centerX, game.world.centerY, "- Headache Warning!!!", {
       font: "20px Arial",
       fill: "ff0044",
       align: "center"
