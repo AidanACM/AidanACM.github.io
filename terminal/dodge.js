@@ -38,9 +38,12 @@ class Play {
     this.background = this.add.tileSprite(0,0,320,568,"bg");
     this.text = game.add.text(game.world.centerX, game.world.centerY, "- Headache Warning!!!", {
       font: "20px Arial",
-      fill: "ff0044",
+      fill: "blue",
       align: "center"
     });
+
+    this.text.anchor.setTo(0.5, 0.5);
+
     this.music = game.add.audio('Music')
     this.music.play()
     this.background.autoScroll(0,99999999999999999999);
