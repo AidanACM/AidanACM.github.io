@@ -21,6 +21,12 @@ class Load {
     console.log("Loading..");
   this.load.image("bg","assets/mybluenesswithnospaces.jpg")
   this.load.audio("Music","assets/Runninginthe90swithnospaces.mp3")  
+  this.text = game.add.text(game.world.centerX, game.world.centerY "- Headache Warning!!!", {
+    font: "20px Arial",
+    fill: "ff0044",
+    align: "center"
+  });
+ 
   }
   create() {
     console.log("Loaded");
