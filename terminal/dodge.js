@@ -20,7 +20,7 @@ class Load {
   preload() {
     console.log("Loading..");
   this.load.image("bg","assets/mybluenesswithnospaces.jpg")
-  this.load.audio("Music","assets/Runninginthe90swithnospaces")  
+  this.load.audio("Music","assets/Runninginthe90swithnospaces.mp3")  
   }
   create() {
     console.log("Loaded");
