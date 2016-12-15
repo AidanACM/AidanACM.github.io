@@ -34,6 +34,8 @@ class Play {
   create() {
     console.log("Entered Play State");
     this.background = this.add.tileSprite(0,0,320,568,"bg");
+    this.music = game.add.audio('Music')
+    this.music.play()
     this.background.autoScroll(0,99999999999999999999);
   }
 }
